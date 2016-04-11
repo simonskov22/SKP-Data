@@ -1,0 +1,1 @@
+en database til at holde oplyninger om computere indhold, taget ud fra en html log fil.
