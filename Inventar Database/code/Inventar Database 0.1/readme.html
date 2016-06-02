@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Read me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Read Me.html</h2>
+        <pre>
+<b>Installation</b>
+hvis filen <u>/Inc/dbconfig.php</u> ikke findes vil den automatisk
+gå til installation siden
+
+ellers gå til <u>index.php?page=install</u>
+og følg alle trine der er
+
+(Husk at slette <u>/Inc/install.php</u> når du er færdig)
+
+
+<b>Side - Tilføj computere</b>
+her vil du kunne tilføj computere
+du har mulig hed for at vælge flere filer af gange
+
+hvis du fortryder kan en fil fjernes kan man klikke
+på fjern eller annullere(fjerner alle)
+
+ved upload kan det godt se ud som om den er gået i står
+men der er en timeout på 1minut så hvis en fil tager
+længer tid end 1 minut vil den sende tilbage med en fejl
+
+filerne bliver uploaded ved hjælp af jquery $.post
+og filerne bliver uploaded ved hjælp af class FileData(<u>/Inc/FileData.php</u>)
+
+en kopi af den uploaded fil vil blive gemt i <u>/Upload/</u> med sammenavn
+
+
+<b>Side - Vis Computere</b>
+visser en liste med de ting computer har
+man kan tilføj flere samt fjerne dem
+den husker dem man har valgt ved hjælp af session
+
+
+<b>Side - Hvad bliver brugt</b>
+her vil alle de dele der er i en computer blive vis og 
+hvormange computere der brugere dem
+
+hvis en computer har flere af de samme ting vil den kun
+blive talt som en 1 computer der bruger den ting
+eksempel
+    en computer af to ram af samme type
+    ud for denne ram type vil denne computer kun blive talt 1 gang
+
+
+<b>Fjerne en computer fra listen/databasen</b>
+lige nu er der ikke en side hvor man kan fjern dem
+men man kan fjern ved hjælp af class FileData(<u>/Inc/FileData.php</u>)
+eksempel
+<i>
+    &#60;?php
+    <b>$computerIndex</b> = 1;
+        <b>$file</b> = new FileData(<b>$computerIndex</b>);
+        <b>$file</b>->RemoveFromSQL();
+    
+    ?&#62;
+</i>
+
+
+<b>/index.php</b>
+håndtere alle siderne udover install.php
+
+ved hjælp af <i>$_Get["page"]</i> ved den hvilken side der skal vise
+functionen <i>Navigation_page()</i> håndtere dette
+<i>Navigation_ajax()</i> bliver brugt hvis noget køre igennem jquery post
+eksempel upload filer
+
+siden layout blivet lavet af ExecutePage($content);
+
+
+<b>Testet på</b>
+    PHP:        Version 5.6.11
+    MySQL:      Version 14.14 Distrib 5.6.25, for Win32 (x86)
+    Browser:    Chrome Version 49.0.2623.112  
+        </pre>
+    </body>
+</html>

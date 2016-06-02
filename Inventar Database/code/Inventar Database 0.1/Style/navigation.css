@@ -1,0 +1,104 @@
+.showMenu{
+    cursor: pointer;    
+    margin: 20px -10px;
+    padding: 0px 4px;               
+    display: none;
+    border-radius: 5px;
+}
+.showMenu span{
+
+    margin: 5px 0;
+    height: 5px;
+    background: white;
+    width: 30px;
+    display: block;
+    border-radius: 10px;
+}
+.showMenu.open{
+    
+    background: #2A8FCA;
+}
+
+.showMenu.open span{
+    background: #E8E8E8;
+    
+}
+
+
+
+.top .navigation, .top .navigation li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+.top .navigation{    
+    margin-top: 30px;
+    margin-left: 150px;
+    
+    margin-left: 30%;
+    position: absolute;
+    left: 0;
+}
+
+.top .navigation li a{
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.top .navigation li a:hover{
+    color: #E6E6E6;
+}
+.top .navigation li a:active{
+    color: #BFBFBF;
+}
+
+@media only screen and (min-width: 1500px) {
+    .top .navigation{
+        margin-left: 432px;        
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 950px) {
+    
+    .showBlock{
+        display: block !important;
+    }
+    
+    .top .navigation{
+        display: none;
+        background: red;
+        
+        margin-top: 0px;
+        margin-left: 10px;
+        background: #34A2E2;
+        border: 5px solid #227AAD;
+        border-top-color: #34A2E2;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        /* background: #227AAD; */
+        
+        position: absolute;
+        top: 75px;
+    }
+    .top .navigation li{
+        display: block;
+        overflow: hidden;
+    }
+    .top .navigation li a{
+        display: inline-block;
+        width: 100%;
+    }
+    .top .navigation li a:hover{
+        background: #227AAD;
+    }
+    .showMenu{
+        display: inline-block !important;
+    }
+}

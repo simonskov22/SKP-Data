@@ -1,0 +1,66 @@
+.multiTable *:not(.noMultiSytle){
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-spacing: 0;
+}
+.multiTable > ul{
+    float: left;
+}
+.multiTable{    
+    max-width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.multiTable .values, .multiTable .subheader {
+    padding: 10px 5px 5px;
+}
+
+.multiTable{
+    border: 2px solid lightgray; 
+    border-radius: 5px;
+}
+.multiTable .header{
+    background: lightgray;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.multiTable .header.small{
+    height: 0px;
+    padding: 5px;
+}
+.multiTable .subheader{
+    background: #C1C1C1;
+    color: #383838;
+    font-weight: bold;
+}
+
+.multiTable .subheader  li,
+.multiTable .values  li{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    padding-left: 20px;
+    overflow: hidden;
+    
+}
+.multiTable .subheader  li:last-child,
+.multiTable .values  li:last-child{
+    /*padding-bottom: 10px;*/
+}
+.multiTable li{
+    border-right: 2px solid lightgray;
+}
+
+
+.multiTable li ul li, 
+.multiTable ul:last-child li{
+    border: 0;
+}
+
+.multiTable .smallVal{
+    width: 250px;
+}

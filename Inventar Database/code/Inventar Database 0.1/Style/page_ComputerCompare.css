@@ -1,0 +1,36 @@
+.multiTable{
+    background: #C1C1C1;
+    margin-top: 15px;
+    min-width: 428px;
+}
+.multiTable .values{    
+    background: #fff;
+    min-width: 250px;
+}
+.multiTable .computerBox ul{
+    position: relative;
+}
+.multiTable .controlButtons{
+    width: 100%;
+    position: absolute; 
+    margin-top: -5px;
+}.multiTable .controlButtons .index{
+    display: none;
+}
+
+.multiTable .changeSize{
+    float: right;
+    margin-right: 20px;
+}
+
+.multiTable .computerBox{
+    background: lightgrey;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.multiTable .computerBox > ul{
+    /*float: left;*/
+     display: inline-block; 
+}

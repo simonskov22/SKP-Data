@@ -1,0 +1,75 @@
+.install{
+    width: 350px;
+    margin: 0 auto;
+    border: 2px groove lightgray;
+    border-radius: 5px;
+}
+.install *:not(.noInstallStyle){
+    margin: 0;
+    padding: 0;
+}
+.install .title, .install .subtitle{
+    background: lightgray;
+    padding: 5px;
+    text-align: center;
+}
+.install .subtitle{
+    background: lightgray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.install .output{
+
+    padding: 15px 10px 5px;
+}
+.install .output input[type='text']{
+    outline: none;
+    padding: 5px 10px;
+    width: 92%;
+    font-size: 20px;
+    border-radius: 3px;
+    margin: 2px 0px 5px;
+    border: 2px inset gray;
+    background: white;        
+}
+.install .output input[value=""]{
+    background: lightgray;
+}
+.install .output input[type='text']:focus{
+    border: 2px inset #03A9F4;   
+}
+.install .controlButtons{
+    border-top: 1px solid gray;
+    padding: 10px 5px 5px; 
+}
+
+.checkdb{
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px !important;
+}
+
+.checkdb li{
+    padding: 10px 5px 0px !important;
+    border-bottom: 1px solid;
+}
+.checkdb .status{
+
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 1px;
+    margin-top: -7px;
+}
+.checkdb .status.green{
+    color: #27BC4B;
+}
+.checkdb .status.red{
+    color: #ff3333;
+}
+.checkdb .status.yellow{
+    color: #F5CE39;
+}

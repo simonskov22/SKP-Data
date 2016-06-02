@@ -1,0 +1,17 @@
+.content{
+    text-align: center;
+}
+.multiTable{
+    text-align: left;
+}
+
+.multiTable .values ul{
+    position: relative;
+}
+.multiTable .values li span{
+    position: absolute;
+}
+.multiTable .values li{
+    text-align: center;
+    padding-left: 0px;
+}
