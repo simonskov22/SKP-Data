@@ -2,7 +2,7 @@
 
 
 ## Inventar Database
-** Kort beskrivelse**
+**Kort beskrivelse**
 
       en database til at holde oplyninger om computere indhold(ram, harddisk, bundkort osv),
       taget ud fra en html log fil. skal så være muligt at søge på tingene i database.
